@@ -32,11 +32,27 @@ function validar(event){
         correcto=false;
         email.style.borderColor="red";
         document.getElementById("errorEmail").style.visibility="visible";
-      }
+    }
+
+    if (email.value.length==0) {
+        event.preventDefault();
+        correcto=false;
+        email.style.borderColor="red";
+        document.getElementById("errorEmailEmpty").style.visibility="visible";
+        event.preventDefault();
+    }
     if (email_verification.value!= email.value) {
         correcto=false;
         email_verification.style.borderColor="red";
         document.getElementById("errorSegundoEmail").style.visibility="visible";
+    }
+
+    if (email_verification.value.length==0) {
+        event.preventDefault();
+        correcto=false;
+        email_verification.style.borderColor="red";
+        document.getElementById("errorEmail_verificationEmpty").style.visibility="visible";
+        event.preventDefault();
     }
 
     if (isNaN(edad.value) || edad.value<18 || edad.value>120 ) {

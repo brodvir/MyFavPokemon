@@ -492,12 +492,18 @@
         <input type="email" name="email" id="email" onfocus="quitarError(this,'errorEmail')">
         <div class="error" id="errorEmail">
           El email debe tener formato de email
+        </div>
+        <div class="error" id="errorEmailEmpty">
+          El mail es obligatorio
         </div> <br>
 
         <label for="email_verification">Verifica tu email:</label>
         <input type="email" name="email_verification" id="email_verification" onfocus="quitarError(this,'errorSegundoEmail')"> 
         <div class="error" id="errorSegundoEmail">
           El segundo email debe coincidir con el primero
+        </div>
+        <div class="error" id="errorEmail_verificationEmpty">
+          El segundo email debe existir
         </div><br>
 
         <label for="edad">Tu edad:</label>
