@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MyFavPokemon</title>
     <link rel="stylesheet" href="./styles/styles.css" />
 
     <link
@@ -13,6 +13,8 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+
+    <link rel="shortcut icon" href="./assets/Poké_Ball_icon.svg.png" type="image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,13 +50,13 @@
           >
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Agua</a>
+                <a class="nav-link active" aria-current="page" href="#agua">Agua</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Fuego</a>
+                <a class="nav-link active" href="#fuego">Fuego</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">Planta</a>
+                <a class="nav-link active" href="#planta">Planta</a>
               </li>
             </ul>
           </div>
@@ -143,7 +145,7 @@
         <p>Comenzamos con lo mejor:</p>
       </div>
 
-      <section class="pokemones">
+      <section class="pokemones" id="agua">
         <h2>Agua</h2>
         <h5>El mejor elemento y tipo de pokemon que existe</h5>
 
@@ -210,7 +212,7 @@
             <div class="card-body">
               <h5 class="card-title">Mudkip</h5>
               <p class="card-text">
-                es un Pokémon de tipo agua introducido en la tercera generación.
+                Es un Pokémon de tipo agua introducido en la tercera generación.
                 Es uno de los Pokémon iniciales que los nuevos entrenadores de
                 la región de Hoenn pueden escoger al iniciar su aventura
                 Pokémon, junto con Treecko y Torchic.
@@ -238,7 +240,7 @@
         </div>
       </section>
 
-      <section class="fuego pokemones">
+      <section class="fuego pokemones" id="fuego">
         <h2>Fuego</h2>
         <h5>
           El segundo mejor elemento y de pokemon está bien porque hace mucho
@@ -251,7 +253,7 @@
             <div class="card-body">
               <h5 class="card-title">Charmander</h5>
               <p class="card-text">
-                s un Pokémon de tipo fuego introducido en la primera generación.
+                Es un Pokémon de tipo fuego introducido en la primera generación.
                 Es uno de los Pokémon iniciales que pueden elegir los
                 entrenadores que empiezan su aventura en la región Kanto.
               </p>
@@ -280,7 +282,7 @@
             <div class="card-body">
               <h5 class="card-title">Cyndaquil</h5>
               <p class="card-text">
-                introducido en la segunda generación. Es uno de los Pokémon
+                Introducido en la segunda generación. Es uno de los Pokémon
                 iniciales que pueden elegir los entrenadores que empiezan su
                 aventura por la región de Johto, junto con Totodile y Chikorita.
               </p>
@@ -335,7 +337,7 @@
         </div>
       </section>
 
-      <section class="planta pokemones">
+      <section class="planta pokemones" id="planta">
         <h2>Planta</h2>
         <h5>Último pero no el peor (un poco si)</h5>
 
@@ -435,6 +437,48 @@
       </section>
     </div>
 
+    <div class="types_accordion">
+      <h2 class="title">Bonus de otras especies</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Psiquico
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Versátiles, mucha defensa, mucho ataque.</strong> El tipo Psíquico en Pokémon se caracteriza por sus habilidades mentales y poderes psíquicos. Los Pokémon de este tipo son capaces de utilizar ataques basados en la mente, como telepatía, telequinesis y control mental. También son conocidos por su alta inteligencia y capacidad de aprendizaje.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Volador
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Siempre podras volar y llegar a todos sitios rápido.</strong> Los Pokémon de tipo Volador son valiosos en un equipo por su movilidad, ventaja contra tipos de Pokémon como Roca y Tierra, su amplia variedad de movimientos y su capacidad para complementar a otros tipos de Pokémon. Su habilidad para volar les brinda ventajas estratégicas, y su versatilidad los hace útiles en diversas situaciones de combate.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Eléctrico
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Muy a mi pesar <strong>es el más poderoso ante los tipo Agua,</strong> Estos Pokémon poseen movimientos eléctricos que pueden paralizar a sus oponentes y causar daño. Además, tienen una alta velocidad y pueden sobresalir en ataques especiales. Los Pokémon de tipo Eléctrico son especialmente efectivos contra Pokémon de tipo Agua y Volador, pero también pueden ser vulnerables a movimientos de tipo Tierra. Son una adición valiosa a un equipo debido a su capacidad para proporcionar cobertura contra varios tipos de Pokémon y su habilidad para paralizar a los oponentes, lo que les da una ventaja táctica en el combate.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <section class="form">
       <h2>¡Registrate para recibir actualizaciones!</h2>
       <form id="formulario">
@@ -469,7 +513,7 @@
         </div><br>
 
         <select name="provincia" id="provincia" onfocus="quitarError(this,'errorProvincia')">
-          <option disabled selected value="">Elege una provincia</option>
+          <option disabled selected value="">Elige una provincia</option>
           <option value="Andalucia">Malaga</option>
           <option value="Murcia">Guadalhorce</option>
           <option value="Cataluna">Sierra de las nieves</option>
@@ -485,16 +529,22 @@
         </div><br>
 
         <button class="btn btn-primary"
-        type="submit" onclick="validar(event)">Enviar Forulario</button>
+        type="submit" onclick="validar(event)">Enviar Formulario</button>
       </form>
     </section>
 
     <footer>
       <div class="footer-container">
         <div
-          > <span class="bold">Contactanos en:</span> <br>Telf: 684-882596 <br>correo: mifavpokemon@correo.com <br> o
-          encuentranos en:</div
+          > <span class="bold">Contáctanos:</span>
+          
+          
+            <li> Teléfono: +34 684-882596</li>
+            <li> Email: mifavpokemon@correo.com</li>
+            <li> Direccion: Chūō-ku, Osaka, Prefectura de Osaka 542-0083, Japón</li> <br> 
+            </div
         >
+
 
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1681365.609554923!2d135.62039709999996!3d34.606255049999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35553a28e799fe89%3A0x5ac642897257eaa4!2zS2Fuc2FpLCBKYXDDs24!5e0!3m2!1ses-419!2ses!4v1687201835667!5m2!1ses-419!2ses"
@@ -506,7 +556,7 @@
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </div>
-      <div class="copyright">MyfavPokemon © - 2023</div>
+      <div class="copyright">MyFavPokemon © - 2023</div>
     </footer>
 
     <!-- Aquí puedes utilizar clases y componentes de Bootstrap -->
